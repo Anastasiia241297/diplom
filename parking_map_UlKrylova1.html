@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_22e7b0dc2e5cca43ca55d4a11b86a96d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_22e7b0dc2e5cca43ca55d4a11b86a96d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_22e7b0dc2e5cca43ca55d4a11b86a96d = L.map(
+                "map_22e7b0dc2e5cca43ca55d4a11b86a96d",
+                {
+                    center: [61.285552, 73.347173],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 18,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9467738de319c242ad970735f3e4da02 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9467738de319c242ad970735f3e4da02.addTo(map_22e7b0dc2e5cca43ca55d4a11b86a96d);
+        
+    
+            var marker_cee7eea7535fa0ea0e7f5cdf8cc875e8 = L.marker(
+                [61.285552, 73.347173],
+                {
+}
+            ).addTo(map_22e7b0dc2e5cca43ca55d4a11b86a96d);
+        
+    
+            var icon_5484644b23e0af28ab144075515296d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "video",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f9764e84e470fbea68a43bc4f319408 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bc30ec2ef57ee53544d22beecdd7f59 = $(`<div id="html_2bc30ec2ef57ee53544d22beecdd7f59" style="width: 100.0%; height: 100.0%;">Камера</div>`)[0];
+                popup_4f9764e84e470fbea68a43bc4f319408.setContent(html_2bc30ec2ef57ee53544d22beecdd7f59);
+            
+        
+
+        marker_cee7eea7535fa0ea0e7f5cdf8cc875e8.bindPopup(popup_4f9764e84e470fbea68a43bc4f319408)
+        ;
+
+        
+    
+    
+                marker_cee7eea7535fa0ea0e7f5cdf8cc875e8.setIcon(icon_5484644b23e0af28ab144075515296d7);
+            
+    
+            var feature_group_003664179288ebda077e018c05ff5a5f = L.featureGroup(
+                {
+}
+            );
+        
+    
+            feature_group_003664179288ebda077e018c05ff5a5f.addTo(map_22e7b0dc2e5cca43ca55d4a11b86a96d);
+        
+    
+            var feature_group_563daea806a942af7e33dfdf5531a6b2 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var polygon_28d280904af21bf34ed9b99d0e3bb700 = L.polygon(
+                [[61.285423278808594, 73.34752624844073], [61.285400390625, 73.34752624844073], [61.285400390625, 73.34762534472141], [61.285423278808594, 73.34762534472141]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_8329a4d5ed7035181e3643fea9d722ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_086d890c2722244f2a9517e28e760bb2 = $(`<div id="html_086d890c2722244f2a9517e28e760bb2" style="width: 100.0%; height: 100.0%;">Место 1 (car)</div>`)[0];
+                popup_8329a4d5ed7035181e3643fea9d722ee.setContent(html_086d890c2722244f2a9517e28e760bb2);
+            
+        
+
+        polygon_28d280904af21bf34ed9b99d0e3bb700.bindPopup(popup_8329a4d5ed7035181e3643fea9d722ee)
+        ;
+
+        
+    
+    
+            var marker_5b4d732b4d4461d15d9bf14fa78b1d33 = L.marker(
+                [61.2854118347168, 73.34757579658107],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_5800c0900bfbfe27044239d5eca84507 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_5b4d732b4d4461d15d9bf14fa78b1d33.setIcon(icon_5800c0900bfbfe27044239d5eca84507);
+            
+    
+            var polygon_be03c070a62064061fe72307cf09231a = L.polygon(
+                [[61.285423278808594, 73.34729498205456], [61.285423278808594, 73.34724823854299], [61.285377502441406, 73.34724823854299], [61.285377502441406, 73.34729498205456]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_af156a1b0c076972976bc427a3d25458 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c2fe58915e40a6370f0ba1a8ef97639 = $(`<div id="html_5c2fe58915e40a6370f0ba1a8ef97639" style="width: 100.0%; height: 100.0%;">Место 2 (car)</div>`)[0];
+                popup_af156a1b0c076972976bc427a3d25458.setContent(html_5c2fe58915e40a6370f0ba1a8ef97639);
+            
+        
+
+        polygon_be03c070a62064061fe72307cf09231a.bindPopup(popup_af156a1b0c076972976bc427a3d25458)
+        ;
+
+        
+    
+    
+            var marker_411e4c6375da23c707173aeebbc480e7 = L.marker(
+                [61.285400390625, 73.34727161029878],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_3b7c4cfd15f1c7e74065ffcd60aa173a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_411e4c6375da23c707173aeebbc480e7.setIcon(icon_3b7c4cfd15f1c7e74065ffcd60aa173a);
+            
+    
+            var polygon_7ec2de6745474ac7442ac18f79b60927 = L.polygon(
+                [[61.285423278808594, 73.34735646133107], [61.285423278808594, 73.3473097178195], [61.285377502441406, 73.3473097178195], [61.285377502441406, 73.34735646133107]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_817b22feee4f85c844b371e2de082a96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7179dca143160d3fe8a87f11a948cf12 = $(`<div id="html_7179dca143160d3fe8a87f11a948cf12" style="width: 100.0%; height: 100.0%;">Место 3 (car)</div>`)[0];
+                popup_817b22feee4f85c844b371e2de082a96.setContent(html_7179dca143160d3fe8a87f11a948cf12);
+            
+        
+
+        polygon_7ec2de6745474ac7442ac18f79b60927.bindPopup(popup_817b22feee4f85c844b371e2de082a96)
+        ;
+
+        
+    
+    
+            var marker_b7568a8d0f166fd634316085f9a7fb26 = L.marker(
+                [61.285400390625, 73.34733308957529],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_c984a68878adc3bdff7a20322510db97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_b7568a8d0f166fd634316085f9a7fb26.setIcon(icon_c984a68878adc3bdff7a20322510db97);
+            
+    
+            var polygon_67272241e9b1396168740cee0cb43d91 = L.polygon(
+                [[61.28541946411133, 73.34758599841214], [61.28541946411133, 73.34753925490625], [61.28537368774414, 73.34753925490625], [61.28537368774414, 73.34758599841214]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_2e724fe3b1856a69e6973dd425f4764a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eba8f6d7ec19d29e8acd919390e8037 = $(`<div id="html_0eba8f6d7ec19d29e8acd919390e8037" style="width: 100.0%; height: 100.0%;">Место 4 (car)</div>`)[0];
+                popup_2e724fe3b1856a69e6973dd425f4764a.setContent(html_0eba8f6d7ec19d29e8acd919390e8037);
+            
+        
+
+        polygon_67272241e9b1396168740cee0cb43d91.bindPopup(popup_2e724fe3b1856a69e6973dd425f4764a)
+        ;
+
+        
+    
+    
+            var marker_8739a85080045ebe4d35b46cb00f31d5 = L.marker(
+                [61.285396575927734, 73.3475626266592],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_967b7a39f3b1578f39d49e0baabf027b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_8739a85080045ebe4d35b46cb00f31d5.setIcon(icon_967b7a39f3b1578f39d49e0baabf027b);
+            
+    
+            var polygon_2b7b9c6239471e363bbe027e2e40811c = L.polygon(
+                [[61.285423278808594, 73.34717243514184], [61.285423278808594, 73.34712569163027], [61.285377502441406, 73.34712569163027], [61.285377502441406, 73.34717243514184]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_b1a09ff2b5cc2ebfc64852b057105de3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4fbe48b13304b5a5d5025fae93a3ee8 = $(`<div id="html_b4fbe48b13304b5a5d5025fae93a3ee8" style="width: 100.0%; height: 100.0%;">Место 5 (car)</div>`)[0];
+                popup_b1a09ff2b5cc2ebfc64852b057105de3.setContent(html_b4fbe48b13304b5a5d5025fae93a3ee8);
+            
+        
+
+        polygon_2b7b9c6239471e363bbe027e2e40811c.bindPopup(popup_b1a09ff2b5cc2ebfc64852b057105de3)
+        ;
+
+        
+    
+    
+            var marker_944876e0b4acf9e5f1f0313e5f0099e5 = L.marker(
+                [61.285400390625, 73.34714906338606],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_e924f3884033149813f18381cc410f19 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_944876e0b4acf9e5f1f0313e5f0099e5.setIcon(icon_e924f3884033149813f18381cc410f19);
+            
+    
+            var polygon_f4f32d0c6b7a75d75f44256dfd660009 = L.polygon(
+                [[61.28541946411133, 73.34754759115057], [61.28541946411133, 73.34750084764468], [61.28537368774414, 73.34750084764468], [61.28537368774414, 73.34754759115057]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_0168c4c4a2f5cf73e8e8c9a959abccde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af48dcb633e3750ac6cb91b01b43b30d = $(`<div id="html_af48dcb633e3750ac6cb91b01b43b30d" style="width: 100.0%; height: 100.0%;">Место 6 (car)</div>`)[0];
+                popup_0168c4c4a2f5cf73e8e8c9a959abccde.setContent(html_af48dcb633e3750ac6cb91b01b43b30d);
+            
+        
+
+        polygon_f4f32d0c6b7a75d75f44256dfd660009.bindPopup(popup_0168c4c4a2f5cf73e8e8c9a959abccde)
+        ;
+
+        
+    
+    
+            var marker_a82aa90b25135ef91b632e2be9e8f1e8 = L.marker(
+                [61.285396575927734, 73.34752421939763],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_2be60575593ec819184c8b2e8ec2d687 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_a82aa90b25135ef91b632e2be9e8f1e8.setIcon(icon_2be60575593ec819184c8b2e8ec2d687);
+            
+    
+            var polygon_a64b8ffadd7bae47feea454e65ac17bb = L.polygon(
+                [[61.28541946411133, 73.34749984939027], [61.28541946411133, 73.34745310588438], [61.28537368774414, 73.34745310588438], [61.28537368774414, 73.34749984939027]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_8daeaff180f7b2b63925c98edffcf817 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e38bef75ae359d91f0e71cb1e44e85c = $(`<div id="html_0e38bef75ae359d91f0e71cb1e44e85c" style="width: 100.0%; height: 100.0%;">Место 7 (car)</div>`)[0];
+                popup_8daeaff180f7b2b63925c98edffcf817.setContent(html_0e38bef75ae359d91f0e71cb1e44e85c);
+            
+        
+
+        polygon_a64b8ffadd7bae47feea454e65ac17bb.bindPopup(popup_8daeaff180f7b2b63925c98edffcf817)
+        ;
+
+        
+    
+    
+            var marker_0cbb0198e5727efd1aa85b257438dfe1 = L.marker(
+                [61.285396575927734, 73.34747647763733],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_7d10d12dbf2254f3f7d3e56c7ff087d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_0cbb0198e5727efd1aa85b257438dfe1.setIcon(icon_7d10d12dbf2254f3f7d3e56c7ff087d3);
+            
+    
+            var polygon_ccb8af4170895341255cb2c55870f408 = L.polygon(
+                [[61.285423278808594, 73.34722567662186], [61.285423278808594, 73.34717893311029], [61.285377502441406, 73.34717893311029], [61.285377502441406, 73.34722567662186]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_28684c9958cad6d2f82a88cbe3b0738e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a85563162bfeeddff4d60afdf875d3a = $(`<div id="html_3a85563162bfeeddff4d60afdf875d3a" style="width: 100.0%; height: 100.0%;">Место 8 (car)</div>`)[0];
+                popup_28684c9958cad6d2f82a88cbe3b0738e.setContent(html_3a85563162bfeeddff4d60afdf875d3a);
+            
+        
+
+        polygon_ccb8af4170895341255cb2c55870f408.bindPopup(popup_28684c9958cad6d2f82a88cbe3b0738e)
+        ;
+
+        
+    
+    
+            var marker_a377b3aaa271a1a18d7fe3cde7682e27 = L.marker(
+                [61.285400390625, 73.34720230486607],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_49836f75a53300184fb70fda60960a08 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_a377b3aaa271a1a18d7fe3cde7682e27.setIcon(icon_49836f75a53300184fb70fda60960a08);
+            
+    
+            var polygon_1608acc728da6b4dea203a1cc148039a = L.polygon(
+                [[61.285430908203125, 73.34737408694494], [61.28540802001953, 73.34737408694494], [61.28540802001953, 73.34747318324972], [61.285430908203125, 73.34747318324972]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_4084dd517e480a0f1e273148d39ce438 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bb9c943cdba3f47c2521a34c0af14e1 = $(`<div id="html_3bb9c943cdba3f47c2521a34c0af14e1" style="width: 100.0%; height: 100.0%;">Место 9 (car)</div>`)[0];
+                popup_4084dd517e480a0f1e273148d39ce438.setContent(html_3bb9c943cdba3f47c2521a34c0af14e1);
+            
+        
+
+        polygon_1608acc728da6b4dea203a1cc148039a.bindPopup(popup_4084dd517e480a0f1e273148d39ce438)
+        ;
+
+        
+    
+    
+            var marker_676aa115f114ce39bf664dd09a89e16e = L.marker(
+                [61.28541946411133, 73.34742363509733],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_98e43e10f9ebaddc579d47d666c1698f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_676aa115f114ce39bf664dd09a89e16e.setIcon(icon_98e43e10f9ebaddc579d47d666c1698f);
+            
+    
+            var polygon_06f2ca86da6987c0d54c6385f446c2de = L.polygon(
+                [[61.285430908203125, 73.34717306062853], [61.28540802001953, 73.34717306062853], [61.28540802001953, 73.34727215693331], [61.285430908203125, 73.34727215693331]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_257d77f590e780f0cf3abac20cd26f74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06a2d6a36b85fb84d5d6a26621368016 = $(`<div id="html_06a2d6a36b85fb84d5d6a26621368016" style="width: 100.0%; height: 100.0%;">Место 10 (car)</div>`)[0];
+                popup_257d77f590e780f0cf3abac20cd26f74.setContent(html_06a2d6a36b85fb84d5d6a26621368016);
+            
+        
+
+        polygon_06f2ca86da6987c0d54c6385f446c2de.bindPopup(popup_257d77f590e780f0cf3abac20cd26f74)
+        ;
+
+        
+    
+    
+            var marker_42d9451e7b6272cdf6e24fdee7bdf344 = L.marker(
+                [61.28541946411133, 73.34722260878092],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_8e8551a187212e20118ac46f6073a282 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_42d9451e7b6272cdf6e24fdee7bdf344.setIcon(icon_8e8551a187212e20118ac46f6073a282);
+            
+    
+            var polygon_eb49252929264d512bcbbf619022496f = L.polygon(
+                [[61.28541946411133, 73.34741829907458], [61.28541946411133, 73.34737155556869], [61.28537368774414, 73.34737155556869], [61.28537368774414, 73.34741829907458]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_34350da90b70ffb70b7d468da3f10e01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d218de668b228399600073bcde3f9992 = $(`<div id="html_d218de668b228399600073bcde3f9992" style="width: 100.0%; height: 100.0%;">Место 11 (car)</div>`)[0];
+                popup_34350da90b70ffb70b7d468da3f10e01.setContent(html_d218de668b228399600073bcde3f9992);
+            
+        
+
+        polygon_eb49252929264d512bcbbf619022496f.bindPopup(popup_34350da90b70ffb70b7d468da3f10e01)
+        ;
+
+        
+    
+    
+            var marker_f2eb08c483132e155868f6251dea87b8 = L.marker(
+                [61.285396575927734, 73.34739492732163],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_38c8b6ec54afb43176104bee2ec60225 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_f2eb08c483132e155868f6251dea87b8.setIcon(icon_38c8b6ec54afb43176104bee2ec60225);
+            
+    
+            var polygon_67e285981065318a2252900724062b5c = L.polygon(
+                [[61.28541946411133, 73.3474716662981], [61.28541946411133, 73.34742492279221], [61.28537368774414, 73.34742492279221], [61.28537368774414, 73.3474716662981]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_3f7e4d0f7af3dd6f2cf8694cde0dd005 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc978b4517a0541701b13173b78d75b3 = $(`<div id="html_bc978b4517a0541701b13173b78d75b3" style="width: 100.0%; height: 100.0%;">Место 12 (car)</div>`)[0];
+                popup_3f7e4d0f7af3dd6f2cf8694cde0dd005.setContent(html_bc978b4517a0541701b13173b78d75b3);
+            
+        
+
+        polygon_67e285981065318a2252900724062b5c.bindPopup(popup_3f7e4d0f7af3dd6f2cf8694cde0dd005)
+        ;
+
+        
+    
+    
+            var marker_416588c540d0f1b69cd5942c00a5c759 = L.marker(
+                [61.285396575927734, 73.34744829454516],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_7c52b102c0715f84904e1e51137143a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_416588c540d0f1b69cd5942c00a5c759.setIcon(icon_7c52b102c0715f84904e1e51137143a1);
+            
+    
+            var polygon_0cf2a5c74b9089e71967db8779f1cd2c = L.polygon(
+                [[61.28541946411133, 73.34719324175788], [61.28539657592773, 73.34719324175788], [61.28539657592773, 73.34729233802653], [61.28541946411133, 73.34729233802653]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_b0c6cdd4e68d7ccf716ef097762c256e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70d3fd4c6e2b11583d720708969106c3 = $(`<div id="html_70d3fd4c6e2b11583d720708969106c3" style="width: 100.0%; height: 100.0%;">Место 13 (car)</div>`)[0];
+                popup_b0c6cdd4e68d7ccf716ef097762c256e.setContent(html_70d3fd4c6e2b11583d720708969106c3);
+            
+        
+
+        polygon_0cf2a5c74b9089e71967db8779f1cd2c.bindPopup(popup_b0c6cdd4e68d7ccf716ef097762c256e)
+        ;
+
+        
+    
+    
+            var marker_fdae25ed0c4c00ffd61037307f0dea2e = L.marker(
+                [61.28540802001953, 73.3472427898922],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_9fe2e3479a40a4a340de5473c90f8437 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_fdae25ed0c4c00ffd61037307f0dea2e.setIcon(icon_9fe2e3479a40a4a340de5473c90f8437);
+            
+    
+            var polygon_f940a801b2860ef75834e83e3a94549f = L.polygon(
+                [[61.285423278808594, 73.34752316196007], [61.285423278808594, 73.3474764184485], [61.285377502441406, 73.3474764184485], [61.285377502441406, 73.34752316196007]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+        var popup_68e55e3b0c9199968beee7aeb00ce056 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_002a5cfb91c49d82f2dade8759792fb7 = $(`<div id="html_002a5cfb91c49d82f2dade8759792fb7" style="width: 100.0%; height: 100.0%;">Место 14 (car)</div>`)[0];
+                popup_68e55e3b0c9199968beee7aeb00ce056.setContent(html_002a5cfb91c49d82f2dade8759792fb7);
+            
+        
+
+        polygon_f940a801b2860ef75834e83e3a94549f.bindPopup(popup_68e55e3b0c9199968beee7aeb00ce056)
+        ;
+
+        
+    
+    
+            var marker_bd9708c73b0886382c7bff83f575b8b8 = L.marker(
+                [61.285400390625, 73.34749979020428],
+                {
+}
+            ).addTo(feature_group_563daea806a942af7e33dfdf5531a6b2);
+        
+    
+            var icon_0d53440d6a04a38b19eed867d4a30868 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "car",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+                marker_bd9708c73b0886382c7bff83f575b8b8.setIcon(icon_0d53440d6a04a38b19eed867d4a30868);
+            
+    
+            feature_group_563daea806a942af7e33dfdf5531a6b2.addTo(map_22e7b0dc2e5cca43ca55d4a11b86a96d);
+        
+    
+            var layer_control_c6031565f71b8fde84f1b25953d9c8e1_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_9467738de319c242ad970735f3e4da02,
+                },
+                overlays :  {
+                    "\u0421\u0432\u043e\u0431\u043e\u0434\u043d\u044b\u0435" : feature_group_003664179288ebda077e018c05ff5a5f,
+                    "\u0417\u0430\u043d\u044f\u0442\u044b\u0435" : feature_group_563daea806a942af7e33dfdf5531a6b2,
+                },
+            };
+            let layer_control_c6031565f71b8fde84f1b25953d9c8e1 = L.control.layers(
+                layer_control_c6031565f71b8fde84f1b25953d9c8e1_layers.base_layers,
+                layer_control_c6031565f71b8fde84f1b25953d9c8e1_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_22e7b0dc2e5cca43ca55d4a11b86a96d);
+
+        
+</script>
+</html>

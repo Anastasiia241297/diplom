@@ -1,0 +1,3 @@
+2025-05-21 13:07:25,758 - INFO - Загрузка тренировочных данных...
+2025-05-21 13:07:26,860 - INFO - Загружено 29130 записей из parking_data
+2025-05-21 13:07:26,861 - ERROR - Ошибка: [Errno 2] No such file or directory: 'detection_results_UlKrylova.csv'
